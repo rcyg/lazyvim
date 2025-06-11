@@ -3,6 +3,7 @@ return {
     "williamboman/mason.nvim",
     opts = function(_, opts)
       vim.list_extend(opts.ensure_installed, {
+        "gopls",
         "shellcheck",
         "shfmt",
         "tailwindcss-language-server",
@@ -56,6 +57,7 @@ return {
       "neovim/nvim-lspconfig",
       "nvim-treesitter/nvim-treesitter",
     },
+    enabled = true,
     config = function()
       require("go").setup({
         tag_transform = "snakecase",
