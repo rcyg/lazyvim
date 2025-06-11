@@ -5,18 +5,16 @@ return {
   opts = {
     -- 在此处添加任何选项
     -- 例如
-    provider = "openrouter",
     providers = {
       openrouter = {
-        __inherited_from = "openai",
         endpoint = "https://openrouter.ai/api/v1",
         api_key_name = "OPENROUTER_API_KEY",
         model = "gpt-4o-mini",
       },
-      openai = {
+      gemini = {
         endpoint = "https://openrouter.ai/api/v1",
         api_key_name = "OPENROUTER_API_KEY",
-        model = "gpt-4o",
+        model = "google/gemini-2.0-flash-001",
       },
     },
   },
