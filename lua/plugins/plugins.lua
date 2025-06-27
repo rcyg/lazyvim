@@ -136,5 +136,11 @@ return {
       priority = 1000, -- Ensure it loads first
     },
     { "ibhagwan/fzf-lua", enabled = false },
+    {
+      "nvim-telescope/telescope-project.nvim",
+      dependencies = {
+        "nvim-telescope/telescope.nvim",
+      },
+    },
   },
 }
