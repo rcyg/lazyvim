@@ -40,4 +40,15 @@ return {
       { "<leader>Gat", "<cmd>GoAddTag<cr>", desc = "Go Add Tag" },
     },
   },
+  {
+    "nvim-java/nvim-java",
+    config = function()
+      require("java").setup({
+        java_debug_adapter = {
+          enable = false,
+        },
+      })
+      vim.lsp.enable("jdtls")
+    end,
+  },
 }
