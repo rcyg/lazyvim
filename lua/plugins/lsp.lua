@@ -42,6 +42,7 @@ return {
   },
   {
     "nvim-java/nvim-java",
+    event = "VeryLazy",
     config = function()
       require("java").setup({
         java_debug_adapter = {
