@@ -44,5 +44,15 @@ return {
         kulala_keymaps_prefix = "",
       },
     },
+    {
+      "snirt/claudecode.nvim",
+      dependencies = { "folke/snacks.nvim" },
+      config = true,
+      keys = {
+        { "<leader>ac", "<cmd>ClaudeCode<cr>", desc = "Toggle Claude" },
+        { "<leader>an", "<cmd>ClaudeCodeNew<cr>", desc = "New Claude Session" },
+        { "<leader>ap", "<cmd>ClaudeCodeSessions<cr>", desc = "Pick Session" },
+      },
+    },
   },
 }
